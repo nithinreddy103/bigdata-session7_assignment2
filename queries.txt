@@ -1,0 +1,17 @@
+1. Write a Hive program to find the number of medals won by each country in swimming.
+
+select country,SUM(total) from olympic where sport = “Swimming” GROUP BY country;
+
+2.Write a Hive program to find the number of medals that India won year wise.
+
+select year,SUM(total) from olympic where country = “India” GROUP BY year;
+
+3.Write a Hive Program to find the total number of medals each country won.
+
+select country,SUM(total) from olympic GROUP BY country;
+
+4.Write a Hive program to find the number of gold medals each country won.
+
+select country,SUM(gold) from olympic GROUP BY country;
+
+
